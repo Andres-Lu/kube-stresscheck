@@ -65,6 +65,7 @@ spec:
       labels:
         app: kube-stresscheck
     spec:
+      nodeName: ip-10-12-153-188.ec2.internal
       tolerations:
         # Allow the pod to run on the master.
         - key: node-role.kubernetes.io/master
